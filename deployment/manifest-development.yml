@@ -1,0 +1,14 @@
+---
+applications:
+  - name: profit-sharing-admin-portal-ui-development
+    routes:
+      - route: profit-sharing-admin-portal-ui-development.us-east-1.np.paas.lmig.com
+    buildpacks:
+      - staticfile_edge
+    instances: 1
+    memory: 512M
+    timeout: 180
+    env: 
+      NODE_ENV: production
+    blue-green:
+      health-check-endpoint: /

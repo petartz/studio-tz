@@ -1,0 +1,21 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@import "~@lmig/lmds-react/base";
+
+
+:disabled {
+    opacity: 50%;
+    background-color: green;
+}
+
+.MuiTableCell-root {
+    /* max-width: 2em !important;
+    padding: 8px !important; */
+}
+
+.MuiTablePagination-root {
+    overflow:visible !important;
+}
+

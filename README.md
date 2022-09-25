@@ -1,4 +1,4 @@
-# profit-sharing-admin-portal-ui
+#Studio-Tz
 
 
 
@@ -26,4 +26,4 @@ By default, all applications in Cloud Foundry will have basic application metric
 For information about these capabilities please refer to [Datadog Cloud Foundry Runtime Documentaion](https://forge.lmig.com/wiki/x/-JZfGw)
 
 -----
-# blog-tz
+# studio-tz
