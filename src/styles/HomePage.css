@@ -21,7 +21,6 @@
   text-align: center;
 }
 
-
 @media screen and (max-width: 678px) {
   .welcome-message{
     text-align: center;

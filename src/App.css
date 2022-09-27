@@ -2,12 +2,24 @@
 @tailwind components;
 @tailwind utilities;
 
+@import "./styles/colors.css";
 @import "./styles/Button.css";
 @import "./styles/HomePage.css";
+@import "./styles/ToggleSwitch";
 
 :disabled {
     opacity: 50%;
     background-color: green;
+}
+
+#light {
+    color: var(--light-mode-text) !important;
+    background-color: var(--light-mode-background) !important;
+}
+
+#dark {
+    color: var(--dark-mode-text) !important;
+    background-color: var(--dark-mode-background) !important;
 }
 
 

@@ -1,0 +1,17 @@
+:root {
+  --dark-mode-text: rgba(255, 255, 255, 0.8);
+  --dark-mode-text-disabled: rgba(255, 255, 255, 0.5);
+  --dark-mode-background:#121212;
+  --dark-mode-hover:rgba(255, 255, 255, 0.08);
+  --dark-mode-disabled:rgba(255, 255, 255, 0.3);
+  --dark-mode-divider: rgba(255, 255, 255, 0.12);
+
+
+  --light-mode-text: rgba(0, 0, 0, 0.87);
+  --light-mode-text-disabled: rgba(0, 0, 0, 0.38);
+  --light-mode-background: #fff;
+  --light-mode-hover:rgba(0, 0, 0, 0.04);
+  --light-mode-disabled:rgba(0, 0, 0, 0.08);
+  --light-mode-divider: rgba(0, 0, 0, 0.12);
+
+}

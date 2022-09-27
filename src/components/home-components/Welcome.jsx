@@ -1,6 +1,13 @@
-import React from "react"
+import { useContext } from "react"
+import { ThemeContext } from "../../context/ThemeContext"
+import ToggleSwitch from "../button-components/ToggleSwitch"
 
 const Welcome = () => {
+  const theme = useContext(ThemeContext)
+
+  const changeTheme = () => {
+    theme.toggleTheme()
+  }
 
   return (
     <div>
@@ -23,9 +30,12 @@ const Welcome = () => {
           Enjoy your time.
         </div>
 
-        <button className="custom-button my-button">
+        {/* className="custom-button my-button" */}
+
+        <button onClick={changeTheme} className={`custom-button my-button ${theme.theme}`}>
           <span>Button</span>
         </button>
+        <ToggleSwitch onClick={changeTheme} label=" "/>
       </div>
 
     </div>

@@ -2,8 +2,7 @@
 import React from 'react'
 import Welcome from '../components/home-components/Welcome'
 
-const App = () => {
-
+const App = (props) => {
   return (
     <div>
       <Welcome/>
