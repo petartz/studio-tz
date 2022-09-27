@@ -22,8 +22,9 @@ const Welcome = () => {
         </div>
         <br/>
         <div className="welcome-continued">
-          I've dedicated this little corner of the universe to the projects, passions,
-          and works of
+          I've dedicated this little corner of the universe
+          <br/>
+          to the projects, passions, and works of
             <div className="petar">
               Petar-Петър Tzonevski-Цоневски.
             </div>

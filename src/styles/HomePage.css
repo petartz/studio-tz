@@ -14,7 +14,7 @@
 
 .welcome-continued {
   max-width: 25em;
-  margin-left: 15em;
+  margin-left: 10em;
 }
 
 .petar {
@@ -31,12 +31,13 @@
   .welcome {
     text-align: left;
     margin-left: 2em;
+    font-size:1.4em;
   }
 
   .welcome-continued {
-    max-width: 20em;
-    margin-left: 3em;
-    margin-right: 3em;
+    max-width: 16em;
+    margin-left: 5em;
+    margin-right: 2em;
     font-size: .8em;
   }
 
