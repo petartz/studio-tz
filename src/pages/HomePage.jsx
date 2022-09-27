@@ -1,8 +1,10 @@
 /* eslint-disable */
-import React from 'react'
+import React, { useContext } from 'react'
 import Welcome from '../components/home-components/Welcome'
+import { ThemeContext } from '../context/ThemeContext'
 
-const App = () => {
+const App = (props) => {
+  const { theme, toggleTheme } = useContext(ThemeContext)
 
   return (
     <div>
