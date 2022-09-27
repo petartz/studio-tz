@@ -2,7 +2,7 @@
 button {
   margin: 20px;
 }
-.custom-btn {
+.custom-button {
   padding: 10px 25px;
   font-family: "Roboto", sans-serif;
   font-weight: 500;
@@ -14,21 +14,21 @@ button {
   display: inline-block;
 }
 
-.btn-4 {
+.my-button {
   width: 130px;
   height: 40px;
   line-height: 42px;
   padding: 0;
   border: none;
 }
-.btn-4 span {
+.my-button span {
   position: relative;
   display: block;
   width: 100%;
   height: 100%;
 }
-.btn-4:before,
-.btn-4:after {
+.my-button:before,
+.my-button:after {
   position: absolute;
   content: "";
   right: 0;
@@ -36,22 +36,22 @@ button {
   background: #000;
   transition: all 0.3s ease;
 }
-.btn-4:before {
+.my-button:before {
   height: 50%;
   width: 2px;
 }
-.btn-4:after {
+.my-button:after {
   width: 20%;
   height: 2px;
 }
-.btn-4:hover:before {
+.my-button:hover:before {
   height: 100%;
 }
-.btn-4:hover:after {
+.my-button:hover:after {
   width: 100%;
 }
-.btn-4 span:before,
-.btn-4 span:after {
+.my-button span:before,
+.my-button span:after {
   position: absolute;
   content: "";
   left: 0;
@@ -59,17 +59,17 @@ button {
   background: #000;
   transition: all 0.3s ease;
 }
-.btn-4 span:before {
+.my-button span:before {
   width: 2px;
   height: 50%;
 }
-.btn-4 span:after {
+.my-button span:after {
   width: 20%;
   height: 2px;
 }
-.btn-4 span:hover:before {
+.my-button span:hover:before {
   height: 100%;
 }
-.btn-4 span:hover:after {
+.my-button span:hover:after {
   width: 100%;
 }
