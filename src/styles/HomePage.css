@@ -21,7 +21,7 @@
   text-align: center;
 }
 
-@media screen and (max-width: 678px) {
+@media only screen and (max-width: 678px) {
   .welcome-message{
     text-align: center;
     font-size: 1em;
@@ -34,8 +34,9 @@
   }
 
   .welcome-continued {
-    max-width: 15em;
-    margin-left: 6em;
+    max-width: 20em;
+    margin-left: 3em;
+    margin-right: 3em;
     font-size: .8em;
   }
 

@@ -69,3 +69,16 @@
 .checkbox:checked + .label .switch {
   right: 4px;
 }
+
+@media only screen and (max-width: 678px) {
+  .inner:before, .inner:after {
+  font-size: 9px;
+}
+
+.inner:before {
+  padding-left: 8px;
+}
+.inner:after {
+  padding-right: 5px;
+}
+}
