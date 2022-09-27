@@ -3,6 +3,7 @@
 @tailwind utilities;
 
 @import "./styles/Button.css";
+@import "./styles/HomePage.css";
 
 :disabled {
     opacity: 50%;
