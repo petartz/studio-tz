@@ -35,7 +35,7 @@ const Welcome = () => {
         <button onClick={changeTheme} className={`custom-button my-button ${theme.theme}`}>
           <span>Button</span>
         </button>
-        <ToggleSwitch label=" "/>
+        <ToggleSwitch onClick={changeTheme} label=" "/>
       </div>
 
     </div>
