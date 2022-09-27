@@ -15,7 +15,7 @@ const Welcome = () => {
         <div className="welcome">
           Welcome...
           <br/>
-          Добре Дошли...
+          Добре дошли...
           <br/>
           Bienvenidos!
           <br/>
@@ -29,9 +29,6 @@ const Welcome = () => {
             </div>
           Enjoy your time.
         </div>
-
-        {/* className="custom-button my-button" */}
-
         <button onClick={changeTheme} className={`custom-button my-button ${theme.theme}`}>
           <span>Button</span>
         </button>
