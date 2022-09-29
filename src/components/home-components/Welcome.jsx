@@ -11,25 +11,21 @@ const Welcome = () => {
 
   return (
     <div>
-      <div className="welcome-message">
-        <div className="welcome">
-          Welcome...
-          <br/>
-          Добре дошли...
-          <br/>
-          Bienvenidos!
-          <br/>
-        </div>
+      <h1 className="welcome">
+        welcome...
         <br/>
-        <div className="welcome-continued">
-          I've dedicated this little corner of the universe
-          <br/>
-          to the projects, passions, and works of
-            <div className="petar">
-              Petar-Петър Tzonevski-Цоневски.
-            </div>
-          Enjoy your time.
-        </div>
+        добре дошли...
+        <br/>
+        bienvenidos!
+        <br/>
+      </h1>
+      <div className="message">
+        <p className="hook">
+          un trocito, трошичка?, de
+        </p>
+        <p className="name">
+          Petar-Петър Tzonevski-Цоневски
+        </p>
         <button onClick={changeTheme} className={`custom-button my-button ${theme.theme}`}>
           <span>Button</span>
         </button>

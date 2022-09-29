@@ -2,45 +2,24 @@ const Biography = () => {
 
 
   return (
-    <div className="bio">
+    <div>
       <h1 className="welcome">
-        Bio
+        bio
       </h1>
-      <div className="biotext">
-        <p>
-          i was born in Sofia in 1998. since then  i've moved between corners
-          of the world that stimulated my love for language, software, and art.
-          reading philosophy of mind, dystopian novels, poetry, and short stories
-          coaxed me into writing my own. in this website i compile some of my work
-          including programming projects, NLP research, writing, art, photography,
-          and other tidbits and gems from our communal web of consciousness.
-        </p>
 
+      <div className="bio">
+        <p className="biotext">
+          a gumbo of interests boil and meld their flavors.
+          sofia to cambridge and elsewhere. linguistics, philosophy of mind,
+          a dash of jorge luis borges. dystopian novels that i haven't read,
+          weird strings of a conscious web. buena vista and calle13 a day keep
+          the doctor at bay. тютюн reminds me of 1984. on a good day with big L,
+          the zest of nlp and a sprinkle of react. childrens books to write and read,
+          ян бибиян, le petite prince?, фют o fausto, pero candide, güey desgraciado,
+          non-stop como que tiene gusano en el pompis. tarkovsky directed it.
+        </p>
         <img className="biopic" src="https://i.imgur.com/A3Vtb2k.jpg" alt="petar-biopic" title="source: imgur.com" />
       </div>
-
-
-      <div className="welcome-message">
-        <div className="welcome">
-          Welcome...
-          <br/>
-          Добре дошли...
-          <br/>
-          Bienvenidos!
-          <br/>
-        </div>
-        <br/>
-        <div className="welcome-continued">
-          I've dedicated this little corner of the universe
-          <br/>
-          to the projects, passions, and works of
-            <div className="petar">
-              Petar-Петър Tzonevski-Цоневски.
-            </div>
-          Enjoy your time.
-        </div>
-      </div>
-
     </div>
   )
 }
