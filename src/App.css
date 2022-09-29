@@ -5,7 +5,8 @@
 @import "./styles/colors.css";
 @import "./styles/Button.css";
 @import "./styles/HomePage.css";
-@import "./styles/ToggleSwitch";
+@import "./styles/ToggleSwitch.css";
+@import "./styles/Biography.css";
 
 :disabled {
     opacity: 50%;

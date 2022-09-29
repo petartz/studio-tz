@@ -35,7 +35,6 @@ const Welcome = () => {
         </button>
         <ToggleSwitch onClick={changeTheme} label=" "/>
       </div>
-
     </div>
   )
 }

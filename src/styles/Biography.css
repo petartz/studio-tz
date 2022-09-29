@@ -1,0 +1,9 @@
+.bio {
+  display: flex;
+  flex-direction: row;
+}
+
+.biopic {
+  max-width: 20em;
+  max-height: 20em;
+}
