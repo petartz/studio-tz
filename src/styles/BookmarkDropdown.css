@@ -41,9 +41,12 @@
 
 /* light styling */
 .dark.bookmark {
-  background: white;
-  color: black;
+  background: var(--light-mode-background);
+  color: var(--dark-mode-background);
 }
 .dark.bookmark::before{
   border-bottom: 30px solid var(--dark-mode-background);
+}
+.dark.bookmark::after{
+  opacity: 70%;
 }
