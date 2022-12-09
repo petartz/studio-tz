@@ -1,6 +1,4 @@
 const Biography = () => {
-
-
   return (
     <div>
       <h1 className="welcome">
@@ -16,7 +14,7 @@ const Biography = () => {
           the doctor at bay. тютюн reminds me of 1984. on a good day with big L,
           the zest of nlp and a sprinkle of react. childrens books to write and read,
           ян бибиян, le petite prince?, фют o fausto, pero candide, güey desgraciado,
-          non-stop como que tiene gusano en el pompis. tarkovsky directed it.
+          non-stop como que tiene gusano en los pompis. tarkovsky directed it.
         </p>
         <img className="biopic" src="https://i.imgur.com/A3Vtb2k.jpg" alt="petar-biopic" title="source: imgur.com" />
       </div>

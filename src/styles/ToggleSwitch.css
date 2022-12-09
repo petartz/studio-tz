@@ -27,7 +27,7 @@
   display: block;
   width: 200%;
   margin-left: -100%;
-  transition: margin 0.3s ease-in 0s;
+  transition: margin 0.2s;
 }
 .inner:before,
 .inner:after {
@@ -61,7 +61,7 @@
   right: 35px;
   border: 0 solid #bbb;
   border-radius: 20px;
-  transition: all 0.3s ease-in 0s;
+  transition: all 0.2s;
 }
 .checkbox:checked + .label .inner {
   margin-left: 0;
