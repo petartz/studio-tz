@@ -27,8 +27,8 @@ const Welcome = () => {
         <p className="name">
           Petar-Петър Tzonevski-Цоневски
         </p>
-        <SnapshotButton theme={theme.theme} onClick = {changeTheme}/>
         <ToggleSwitch onClick={changeTheme} label=" "/>
+        <SnapshotButton theme={theme.theme} onClick = {changeTheme}/>
       </div>
     </div>
   )
