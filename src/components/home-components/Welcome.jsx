@@ -1,6 +1,7 @@
 import { useContext } from "react"
 import { ThemeContext } from "../../context/ThemeContext"
-import ToggleSwitch from "../button-components/ToggleSwitch"
+import SnapshotButton from "../reusable/button-components/SnapshotButton"
+import ToggleSwitch from "../reusable/button-components/ToggleSwitch"
 
 const Welcome = () => {
   const theme = useContext(ThemeContext)
@@ -11,33 +12,24 @@ const Welcome = () => {
 
   return (
     <div>
-      <div className="welcome-message">
-        <div className="welcome">
-          Welcome...
-          <br/>
-          Добре Дошли...
-          <br/>
-          Bienvenidos!
-          <br/>
-        </div>
+      <h1 className="welcome">
+        welcome...
         <br/>
-        <div className="welcome-continued">
-          I've dedicated this little corner of the universe to the projects, passions,
-          and works of
-            <div className="petar">
-              Petar-Петър Tzonevski-Цоневски.
-            </div>
-          Enjoy your time.
-        </div>
-
-        {/* className="custom-button my-button" */}
-
-        <button onClick={changeTheme} className={`custom-button my-button ${theme.theme}`}>
-          <span>Button</span>
-        </button>
+        добре дошли...
+        <br/>
+        bienvenidos!
+        <br/>
+      </h1>
+      <div className="message">
+        <p className="hook">
+          un trocito, трошичка?, de
+        </p>
+        <p className="name">
+          Petar-Петър Tzonevski-Цоневски
+        </p>
+        <SnapshotButton theme={theme.theme} onClick = {changeTheme}/>
         <ToggleSwitch onClick={changeTheme} label=" "/>
       </div>
-
     </div>
   )
 }

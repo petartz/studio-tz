@@ -7,7 +7,7 @@
 }
 .toggle-switch {
   position: relative;
-  width: 75px;
+  width: 55px;
   display: inline-block;
   text-align: left;
   top: 8px;
@@ -16,6 +16,7 @@
   display: none;
 }
 .label {
+  height:25px;
   display: block;
   overflow: hidden;
   cursor: pointer;
@@ -26,46 +27,58 @@
   display: block;
   width: 200%;
   margin-left: -100%;
-  transition: margin 0.3s ease-in 0s;
+  transition: margin 0.2s;
 }
 .inner:before,
 .inner:after {
+  font-size: 10px;
   float: left;
   width: 50%;
   height: 36px;
   padding: 0;
-  line-height: 36px;
+  line-height: 27px;
   font-weight: bold;
   box-sizing: border-box;
 }
 .inner:before {
   content: "Dark";
-  font-size: 12px;
-  padding-left: 10px;
+  padding-left: 7px;
   background-color: #060;
 }
 .inner:after {
   content: "Light";
-  font-size: 12px;
-  padding-right: 10px;
+  padding-right: 4px;
   background-color: #bbb;
   text-align: right;
 }
 .switch {
   display: block;
-  width: 20px;
-  height: 20px;
+  width: 15px;
+  height: 15px;
   background: #fff;
   position: absolute;
-  top: 8px;
-  right: 50px;
+  top: 5.5px;
+  right: 35px;
   border: 0 solid #bbb;
   border-radius: 20px;
-  transition: all 0.3s ease-in 0s;
+  transition: all 0.2s;
 }
 .checkbox:checked + .label .inner {
   margin-left: 0;
 }
 .checkbox:checked + .label .switch {
   right: 4px;
+}
+
+@media only screen and (max-width: 678px) {
+  .inner:before, .inner:after {
+  font-size: 9px;
+}
+
+.inner:before {
+  padding-left: 8px;
+}
+.inner:after {
+  padding-right: 5px;
+}
 }

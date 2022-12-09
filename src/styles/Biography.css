@@ -1,0 +1,19 @@
+.bio {
+  display: flex;
+  flex-direction: row;
+  margin-top: 2em;
+  margin-bottom: 10em;
+  margin-left: 8em;
+  margin-right: 4em;
+}
+
+.biotext{
+  font-size: .8em;
+  margin-right: 8em;
+  margin-left: 8em;
+}
+.biopic {
+  max-width: 40em;
+  max-height: 15em;
+  border-radius: 1.5em;
+}

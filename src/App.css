@@ -2,10 +2,16 @@
 @tailwind components;
 @tailwind utilities;
 
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Serif:opsz@8..144&display=swap');
 @import "./styles/colors.css";
-@import "./styles/Button.css";
-@import "./styles/HomePage.css";
-@import "./styles/ToggleSwitch";
+@import "./styles/SnapshotButton.css";
+@import "./styles/Welcome.css";
+@import "./styles/ToggleSwitch.css";
+@import "./styles/Biography.css";
+
+body {
+    font-family: 'Roboto Serif', serif;
+}
 
 :disabled {
     opacity: 50%;
