@@ -1,7 +1,7 @@
-const BookmarkDropdown = () => {
+const BookmarkDropdown = ({theme}) => {
   return (
     <div>
-      <div className={`bookmark flag`}>
+      <div className={`bookmark flag ${theme}`}>
       </div>
     </div>
   )

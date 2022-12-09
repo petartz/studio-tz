@@ -11,7 +11,7 @@ const Contents = () => {
 
   return (
     <div className={"bookmark-container"}>
-      <BookmarkDropdown/>
+      <BookmarkDropdown theme={theme.theme}/>
     </div>
   )
 }
