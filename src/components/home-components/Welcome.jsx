@@ -12,23 +12,14 @@ const Welcome = () => {
 
   return (
     <div>
-      <h1 className="welcome">
-        welcome...
-        <br/>
-        добре дошли...
-        <br/>
-        bienvenidos!
-        <br/>
-      </h1>
-      <div className="message">
-        <p className="hook">
-          un trocito, трошичка?, de
-        </p>
-        <p className="name">
-          Petar-Петър Tzonevski-Цоневски
-        </p>
-        <SnapshotButton theme={theme.theme} onClick = {changeTheme}/>
-        <ToggleSwitch onClick={changeTheme} label=" "/>
+      <ToggleSwitch onClick={changeTheme} label=" "/>
+      <div className="">
+        <div className="message">
+          <p className="name">
+            Petar-Петър Tzonevski-Цоневски
+          </p>
+          <SnapshotButton theme={theme.theme} onClick= {changeTheme}/>
+        </div>
       </div>
     </div>
   )

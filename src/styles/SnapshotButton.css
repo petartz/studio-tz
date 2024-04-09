@@ -1,5 +1,5 @@
 /**** SNAPSHOT BUTTON ****/
-.my-button {
+.snapshot-button {
   margin: 20px;
   padding: 10px 25px;
   font-family: "Roboto", sans-serif;
@@ -10,9 +10,7 @@
   transition: all 0.3s ease;
   position: relative;
   display: inline-block;
-}
-
-.snapshot-button {
+  
   width: 130px;
   height: 40px;
   line-height: 42px;
@@ -47,6 +45,8 @@
   transition: all 0.3s ease;
 }
   /* =============end============== */
+  
+  
   /* dark mode button */
   /* ============begin============== */
 
@@ -70,6 +70,26 @@
 }
   /* =============end============== */
 
+
+  /* ============= BOTTOM BRACKET ============== */
+.snapshot-button span:before {
+  height: 50%;
+  width: 2px; 
+}
+.snapshot-button span:after {
+  width: 20%;
+  height: 2px;
+}
+
+.snapshot-button span:hover:after {
+  width: 100%;
+}
+
+.snapshot-button span:hover:before {
+  height: 100%;
+}
+
+  /* ============= TOP BRACKET ============== */
 .snapshot-button:before {
   height: 50%;
   width: 2px;
@@ -82,20 +102,5 @@
   height: 100%;
 }
 .snapshot-button:hover:after {
-  width: 100%;
-}
-
-.snapshot-button span:before {
-  width: 2px;
-  height: 50%;
-}
-.snapshot-button span:after {
-  width: 20%;
-  height: 2px;
-}
-.snapshot-button span:hover:before {
-  height: 100%;
-}
-.snapshot-button span:hover:after {
   width: 100%;
 }

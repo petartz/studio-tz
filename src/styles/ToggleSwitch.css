@@ -1,4 +1,4 @@
-.container {
+.toggle-container {
   text-align: center;
   position: absolute;
   top: 0;
@@ -7,7 +7,7 @@
 }
 .toggle-switch {
   position: relative;
-  width: 55px;
+  width: 45px;
   display: inline-block;
   text-align: left;
   top: 8px;
@@ -34,19 +34,19 @@
   font-size: 10px;
   float: left;
   width: 50%;
-  height: 36px;
+  height: 30px;
   padding: 0;
   line-height: 27px;
   font-weight: bold;
   box-sizing: border-box;
 }
 .inner:before {
-  content: "Dark";
+  content: "";
   padding-left: 7px;
   background-color: #060;
 }
 .inner:after {
-  content: "Light";
+  content: "";
   padding-right: 4px;
   background-color: #bbb;
   text-align: right;
@@ -58,7 +58,7 @@
   background: #fff;
   position: absolute;
   top: 5.5px;
-  right: 35px;
+  right: 25px;
   border: 0 solid #bbb;
   border-radius: 20px;
   transition: all 0.2s;
@@ -72,13 +72,13 @@
 
 @media only screen and (max-width: 678px) {
   .inner:before, .inner:after {
-  font-size: 9px;
-}
+    font-size: 9px;
+  }
 
-.inner:before {
-  padding-left: 8px;
-}
-.inner:after {
-  padding-right: 5px;
-}
+  .inner:before {
+    padding-left: 8px;
+  }
+  .inner:after {
+    padding-right: 5px;
+  }
 }

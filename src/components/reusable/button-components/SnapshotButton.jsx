@@ -1,7 +1,7 @@
 const SnapshotButton = ({theme, onClick}) => {
 
   return (
-    <button onClick={onClick} className={`my-button snapshot-button ${theme}`}>
+    <button onClick={onClick} className={`snapshot-button ${theme}`}>
       <span>Button</span>
     </button>
   )
