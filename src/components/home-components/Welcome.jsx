@@ -2,6 +2,7 @@ import { useContext } from "react"
 import { ThemeContext } from "../../context/ThemeContext"
 import SnapshotButton from "../reusable/button-components/SnapshotButton"
 import ToggleSwitch from "../reusable/button-components/ToggleSwitch"
+import SideBar from "../../panels/SideBar"
 
 const Welcome = () => {
   const theme = useContext(ThemeContext)
@@ -20,6 +21,7 @@ const Welcome = () => {
           </p>
           <SnapshotButton theme={theme.theme} onClick= {changeTheme}/>
         </div>
+        <SideBar></SideBar>
       </div>
     </div>
   )
