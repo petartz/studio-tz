@@ -1,27 +1,29 @@
 import { useContext } from "react"
 import { ThemeContext } from "../../context/ThemeContext"
 import SnapshotButton from "../reusable/button-components/SnapshotButton"
-import ToggleSwitch from "../reusable/button-components/ToggleSwitch"
-import SideBar from "../../panels/SideBar"
+import Modal from "../../components/reusable/Modal"
+import { SidePanel } from "../../panels/SidePanel"
+import SunOrMoon from "../reusable/SunOrMoon"
 
 const Welcome = () => {
   const theme = useContext(ThemeContext)
 
   const changeTheme = () => {
-    theme.toggleTheme()
+    theme.toggleMode()
   }
 
   return (
     <div>
-      <ToggleSwitch onClick={changeTheme} label=" "/>
+      <SunOrMoon mode={theme.mode} onClick={changeTheme}></SunOrMoon>
+      <SidePanel></SidePanel>
       <div className="">
         <div className="message">
           <p className="name">
-            Petar-Петър Tzonevski-Цоневски
+            Пеtъr Цоnеvsки
           </p>
-          <SnapshotButton theme={theme.theme} onClick= {changeTheme}/>
+          <SnapshotButton theme={theme.mode} onClick={changeTheme}/>
         </div>
-        <SideBar></SideBar>
+        <Modal></Modal>
       </div>
     </div>
   )

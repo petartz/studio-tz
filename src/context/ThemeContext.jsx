@@ -1,27 +1,27 @@
 import { createContext, useState } from "react";
 
-export const ThemeContext = createContext([{theme: [], function() {}}])
+export const ThemeContext = createContext([{mode: [], function() {}}])
 
 export function ThemeProvider({ children }){
-  const [theme, setTheme] = useState("light")
+  const [mode, setMode] = useState("light")
 
-  const toggleTheme = () => {
-    if(theme === "light") {
+  const toggleMode = () => {
+    if(mode === "light") {
       document.body.setAttribute('id', 'dark')
     } else {
       document.body.setAttribute('id', 'light')
     }
-    setTheme((curr) => curr === "light" ? "dark" : "light")
+    setMode((curr) => curr === "light" ? "dark" : "light")
   }
 
-  const themeValue = {
-    theme: theme,
-    toggleTheme: toggleTheme
+  const modeValue = {
+    mode: mode,
+    toggleMode: toggleMode
   }
 
   return (
     <>
-      <ThemeContext.Provider value={themeValue}>
+      <ThemeContext.Provider value={modeValue}>
         {children}
       </ThemeContext.Provider>
     </>
