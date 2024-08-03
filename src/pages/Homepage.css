@@ -1,3 +1,37 @@
 .home-grid {
   display: grid;
+  overflow: 'scroll';
+  overflow-y: 'scroll';
+}
+
+.scroll-watcher {
+  height: 10px;
+  position: fixed;
+  top: 10;
+  z-index: 100;
+  background-color: lime;
+  width: 100%;
+  scale: 0 1;
+  animation: scroll-watcher linear both;
+  animation-timeline: scroll();
+}
+
+@keyframes scroll-watcher {
+  to { scale: 1 1; }
+}
+
+.scroll-watcher2 {
+  width: 10px;
+  position: fixed;
+  left: 0;
+  z-index: 100;
+  background-color: lime;
+  height: 100%;
+  scale: 1 0;
+  animation: scroll-watcher2 linear both;
+  animation-timeline: scroll();
+}
+
+@keyframes scroll-watcher2 {
+  to { scale: 1 1; }
 }

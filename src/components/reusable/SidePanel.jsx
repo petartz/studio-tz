@@ -1,13 +1,13 @@
 import { useState, useContext } from 'react'
 import { ThemeContext } from '../../context/ThemeContext'
-import SnapshotButton from './button/SnapshotButton'
+import SnapshotButton from '../reusable/buttons/SnapshotButton'
 
 const SidePanel = (props) => {
     const theme = useContext(ThemeContext)
     const [showModal, setShowModal] = useState(false)
     return (
         <>
-            <div className="w-full text-center content-center pb-4 mt-4 mx-auto">
+            <div id="side-panel" className="w-full text-center content-center pb-4 mt-4 mx-auto">
                 <SnapshotButton 
                     className="m-auto"
                     theme={theme.mode}
