@@ -1,8 +1,7 @@
-import { useContext, useState } from "react";
+import { useContext } from "react";
 import { ThemeContext } from "../context/ThemeContext";
 import { Fragment } from 'react'
 import { Menu, Transition } from '@headlessui/react'
-import { ChevronLeftIcon } from '@heroicons/react/20/solid'
 
 function classNames(...classes) {
     return classes.filter(Boolean).join(' ')

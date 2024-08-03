@@ -1,8 +1,8 @@
 import { useState, useContext } from 'react'
 import { ThemeContext } from '../../context/ThemeContext'
-import SnapshotButton from '../reusable/buttons/SnapshotButton'
+import SnapshotButton from './button/SnapshotButton'
 
-const Modal = (props) => {
+const SidePanel = (props) => {
     const theme = useContext(ThemeContext)
     const [showModal, setShowModal] = useState(false)
     return (
@@ -12,7 +12,7 @@ const Modal = (props) => {
                     className="m-auto"
                     theme={theme.mode}
                     onClick={() => setShowModal(true)}
-            />
+                />
             {showModal ? (
                 <>
                 <div className="fixed top-0 left-0 z-50 p-10 backdrop-blur-lg w-screen h-screen flex justify-center">
@@ -39,4 +39,4 @@ const Modal = (props) => {
 
     )
 }
-export default Modal
+export default SidePanel

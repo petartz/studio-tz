@@ -1,4 +1,4 @@
-const TailwindToggleA = ({ mode, onClick }) => {
+const SunOrMoon = ({ mode, onClick }) => {
   return (
     <div className="toggle-container">
       <label className="relative inline-flex cursor-pointer items-center">
@@ -16,4 +16,4 @@ const TailwindToggleA = ({ mode, onClick }) => {
   )
 };
 
-export default TailwindToggleA;
+export default SunOrMoon;

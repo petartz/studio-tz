@@ -1,0 +1,5 @@
+@import "./colors.css";
+@import "../components/home/Biography.css";
+@import "../components/home/Welcome.css";
+@import "../components/reusable/buttons/SnapshotButton.css";
+@import "../components/reusable/buttons/SunOrMoon.css";
