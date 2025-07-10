@@ -1,9 +1,10 @@
+import { useScrollObserver } from "../../hooks/useScrollObserver"
+
 const Biography = ({bioRef, welcomeRef}: any) => {
-  
-  console.log(bioRef)
+  useScrollObserver(welcomeRef);
   return (
-    <div>
-      <div ref={bioRef} className="grid grid-cols-1 md:grid-cols-2">
+    <div ref={bioRef}>
+      <div className="grid grid-cols-1 md:grid-cols-2">
         <p className="mx-4 mb-6 text-xs md:m-auto md:p-16 lg:m-6">
         Lorem Ipsum is simply dummy text of the printing and typesetting industry.
          Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, 

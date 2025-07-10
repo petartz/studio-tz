@@ -1,6 +1,5 @@
 #scroll-panel {
   height: 90vh;
-  /* height:440px; */
   overflow-y:auto;
   margin-left:-5px;
 }

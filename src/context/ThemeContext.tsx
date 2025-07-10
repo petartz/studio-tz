@@ -1,6 +1,13 @@
 import { createContext, useState } from "react";
 
-export const ThemeContext = createContext([{mode: [], function() {}}])
+interface ThemeContextType {
+  mode: string;
+  toggleMode: () => void;
+}
+export const ThemeContext = createContext<ThemeContextType>({
+  mode: '',
+  toggleMode: () => {}
+})
 
 export function ThemeProvider({ children }: any){
   const [mode, setMode] = useState("light")
