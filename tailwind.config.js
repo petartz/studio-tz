@@ -1,5 +1,6 @@
+/** @type {import('tailwindcss').Config} */
 module.exports = {
-  purge: [],
+  content: ["./src/**/*.{html,js,jsx}"],
   darkMode: false, // or 'media' or 'class'
   theme: {
     boxShadow: {
@@ -29,11 +30,9 @@ module.exports = {
         DEFAULT: '8px',
       },
     },
-
   },
   variants: {
     extend: {},
     opacity: ['responsive', 'hover', 'focus', 'disabled'],
   },
-  plugins: []
 }
