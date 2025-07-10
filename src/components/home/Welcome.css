@@ -1,4 +1,13 @@
-@import url('https://fonts.googleapis.com/css2?family=Roboto+Serif:opsz@8..144&display=swap');
+#scroll-panel {
+  height: 90vh;
+  /* height:440px; */
+  overflow-y:auto;
+  margin-left:-5px;
+}
+
+.tall {
+  height: 92vh;
+}
 
 .welcome {
   text-align: left;

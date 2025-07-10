@@ -1,9 +1,7 @@
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
-
 @import url('https://fonts.googleapis.com/css2?family=Roboto+Serif:opsz@8..144&display=swap');
+@import "tailwindcss";
 @import './styles/styles.css';
+
 body {
     font-family: 'Roboto Serif', serif;
 }

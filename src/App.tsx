@@ -1,7 +1,7 @@
 import "./App.css";
-import { Routes, Route } from "react-router-dom";
-import HomePage from "./pages/HomePage";
-import { ThemeProvider } from './context/ThemeContext';
+import { Routes, Route } from "react-router";
+import HomePage from "./pages/HomePage.tsx";
+import { ThemeProvider } from './context/ThemeContext.tsx';
 
 function App() {
 
