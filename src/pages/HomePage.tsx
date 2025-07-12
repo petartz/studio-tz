@@ -1,4 +1,5 @@
 /* eslint-disable */
+import { EyeTracker } from '../components/EyeTracker'
 import Biography from '../components/home/Biography'
 import Welcome from '../components/home/Welcome'
 import Modal from "../components/reusable/Modal"
@@ -22,10 +23,11 @@ const App = () => {
     <>
     <div className='home-grid'>
         <SunOrMoon mode={theme.mode} onClick={changeTheme}></SunOrMoon>
+        <EyeTracker></EyeTracker>
         <Welcome bioRef={bioRef} welcomeRef={welcomeRef}/>
+        <Biography bioRef={bioRef} welcomeRef={welcomeRef}/>
         <Modal/>
         {/*  */}
-        <Biography bioRef={bioRef} welcomeRef={welcomeRef}/>
         <SnapshotButton theme={theme.mode} />
         <SnapshotButton theme={theme.mode} onClick={changeTheme}/>
         <Biography/>
