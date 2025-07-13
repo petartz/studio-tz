@@ -2,6 +2,6 @@
 @import "../components/home/Biography.css";
 @import "../components/home/Welcome.css";
 @import "../components/reusable/buttons/SnapshotButton.css";
-@import "../components/reusable/buttons/SunOrMoon.css";
+@import "../components/reusable/buttons/ThemeSwitch.css";
 @import "../pages/Homepage.css";
 @import "../components/EyeTracker.css";
