@@ -3,14 +3,15 @@ import { EyeTracker } from '../components/EyeTracker'
 import Biography from '../components/home/Biography'
 import Welcome from '../components/home/Welcome'
 import Modal from "../components/reusable/Modal"
+import SidePanel from '../components/reusable/SidePanel'
 import SnapshotButton from "../components/reusable/buttons/SnapshotButton"
-import SunOrMoon from "../components/reusable/buttons/SunOrMoon"
+import ThemeSwitch from "../components/reusable/buttons/ThemeSwitch"
 import {ThemeContext} from "../context/ThemeContext"
 import { useContext, useEffect, useRef } from 'react'
 
 const App = () => {
-  const welcomeRef = useRef(document.createElement('div'));
-  const bioRef = useRef(document.createElement('div'));
+  const welcomeRef = useRef(null);
+  const bioRef = useRef(null);
   const theme = useContext(ThemeContext)
 
   const changeTheme = () => {
@@ -22,7 +23,7 @@ const App = () => {
   return (
     <>
     <div className='home-grid'>
-        <SunOrMoon mode={theme.mode} onClick={changeTheme}></SunOrMoon>
+        <ThemeSwitch mode={theme.mode} onClick={changeTheme}></ThemeSwitch>
         <EyeTracker></EyeTracker>
         <Welcome bioRef={bioRef} welcomeRef={welcomeRef}/>
         <Biography bioRef={bioRef} welcomeRef={welcomeRef}/>

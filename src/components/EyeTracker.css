@@ -1,7 +1,6 @@
 .eye-container {
   position: fixed;   /* Stay on screen */
-  top: 5px;  
-  left: 47.5%;
+  top: 8px;  
   z-index: 1000;
 }
 

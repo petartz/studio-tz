@@ -12,10 +12,10 @@ const Welcome = ({ bioRef, welcomeRef }: any) => {
           Пеtъr Цоnеvsки
         </p>
       </div>
-        <div onClick={scrollInto} id="scroll-panel" className='flex flex-row bottom-0 h-screen justify-center align-center'>
+        <div onClick={scrollInto} id="scroll-panel" className='flex h-screen justify-center'>
           <div className="tall"></div>
-          <div className='absolute bottom-6 left-0 right-0'>
-            <svg id="" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor" className="size-10 m-auto">
+          <div className='absolute bottom-3 left-0 right-0'>
+            <svg id="" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor" className="size-9 m-auto">
               <path strokeLinecap="round" strokeLinejoin="round" d="m19.5 8.25-7.5 7.5-7.5-7.5" />
             </svg>
         </div>

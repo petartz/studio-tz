@@ -15,7 +15,7 @@ const Modal = () => {
             />
             {showModal ? (
                 <>
-                <div className="fixed top-0 left-0 z-50 p-10 backdrop-blur-lg w-screen h-screen flex justify-center">
+                <div onClick={() => setShowModal(false)} className="fixed top-0 left-0 z-50 p-10 backdrop-blur-lg w-screen h-screen flex justify-center">
                     <button onClick={() => {showModal && setShowModal(false)}} >
                     <svg xmlns="http://www.w3.org/2000/svg" 
                         viewBox="0 0 24 24" 

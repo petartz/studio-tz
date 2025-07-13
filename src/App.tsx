@@ -1,4 +1,4 @@
-import "./App.css";
+import "./App.css"
 import { Routes, Route } from "react-router";
 import HomePage from "./pages/HomePage.tsx";
 import { ThemeProvider } from './context/ThemeContext.tsx';

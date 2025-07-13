@@ -1,6 +1,6 @@
-const SunOrMoon = ({ mode, onClick }: any) => {
+const ThemeSwitch = ({ mode, onClick }: any) => {
   return (
-    <div className="toggle-container">
+    <div className="theme-toggle">
       <label className="relative inline-flex cursor-pointer items-center">
         <input id="switch-2" onClick={onClick} type="checkbox" className="peer sr-only" />
         { mode === "light" ?
@@ -16,4 +16,4 @@ const SunOrMoon = ({ mode, onClick }: any) => {
   )
 };
 
-export default SunOrMoon;
+export default ThemeSwitch;
