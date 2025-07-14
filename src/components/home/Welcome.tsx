@@ -1,12 +1,17 @@
+import { useEffect } from "react";
 import useScroll from "../../hooks/useScroll";
 import { useScrollObserver } from "../../hooks/useScrollObserver";
 
-const Welcome = ({ bioRef, welcomeRef }: any) => {
+const Welcome = ({ setTarget, bioRef, welcomeRef }: any) => {
   const { scrollInto } = useScroll(bioRef);
-  useScrollObserver(bioRef);
+
+  useEffect(() => {
+    setTarget(bioRef?.current)
+  })
+  // useScrollObserver(bioRef);
 
   return (
-    <div ref={welcomeRef} className="welcome-page">
+    <div id={"welcome-id"} ref={welcomeRef} data-next={"bio-id"} className="welcome-page">
       <div className="message">
         <p className="name">
           Пеtъr Цоnеvsки

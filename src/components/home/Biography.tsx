@@ -1,9 +1,10 @@
+import { useEffect } from "react"
 import { useScrollObserver } from "../../hooks/useScrollObserver"
 
-const Biography = ({bioRef, welcomeRef}: any) => {
-  useScrollObserver(welcomeRef);
+const Biography = ({setTarget, bioRef, welcomeRef}: any) => {
+  // useScrollObserver(welcomeRef);
   return (
-    <div ref={bioRef}>
+    <div id={"bio-id"} data-next={"welcome-id"} ref={bioRef}>
       <div className="grid grid-cols-1 md:grid-cols-2">
         <p className="mx-4 mb-6 text-xs md:m-auto md:p-16 lg:m-6">
         Lorem Ipsum is simply dummy text of the printing and typesetting industry.
